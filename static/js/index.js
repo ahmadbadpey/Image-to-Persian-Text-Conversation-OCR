@@ -18,7 +18,7 @@ let myDropzone = new Dropzone("#upload-btn", {
 });
 
 function getPredict(image) {
-    fetch('/predict', {
+    fetch('/convert', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

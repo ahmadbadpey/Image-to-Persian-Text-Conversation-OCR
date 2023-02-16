@@ -17,7 +17,7 @@ def hello_world():  # put application's code here
 def upload():
     file = request.files['file']
     fn = secure_filename(file.filename)
-    file.save(os.path.join('../uploads', fn))
+    file.save(os.path.join('uploads', fn))
     return {
         "success": True,
         "message": fn
