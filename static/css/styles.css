@@ -42,6 +42,7 @@ body {
     font-family: "iranyekan_numbers", "iranyekan", "B Yekan", sans-serif;
     padding: 3rem 6rem;
     background-color: lightblue;
+    direction: rtl;
 }
 
 main {
