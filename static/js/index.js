@@ -27,8 +27,9 @@ function getPredict(image) {
             'image': image
         })
     })
-        .then(r => r.text())
+        .then(r => r.json())
         .then(response => {
             // console.log(response)
+            document.getElementById('result').innerText = response.message
         })
 }
