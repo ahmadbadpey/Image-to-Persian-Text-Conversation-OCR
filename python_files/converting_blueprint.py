@@ -17,7 +17,7 @@ def index():
 
     rgb_img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
 
-    text = pytesseract.image_to_string(rgb_img, lang='fas')
+    text = pytesseract.image_to_string(rgb_img, lang='fas+eng')
 
     return {
         "success": True,
